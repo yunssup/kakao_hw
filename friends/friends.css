@@ -5,7 +5,6 @@ body {
   width: 70vh;
   height: 100vh;
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -21,92 +20,105 @@ body {
   justify-content: space-between;
   flex: 1;
   width: 100%;
-}
-
-.top p:nth-child(1) {
-  margin-left: 30px;
-  order: 1;
-}
-.top i:nth-child(2) {
-  order: 2;
-}
-.top p:nth-child(3) {
-  display: flex;
-  order: 2;
-  justify-content: center;
-}
-
-.top p:nth-child(4) {
-  order: 3;
-  justify-content: right;
-}
-.top i:nth-child(5) {
-  order: 3;
-  justify-content: right;
-}
-.top i:nth-child(6) {
-  order: 3;
-  margin-left: -70px;
-  justify-content: right;
+  flex-direction: row;
 }
 
 .Friends {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  font-size: 30px;
-  font-weight: 700;
   border: 1px solid blue;
 }
-.Friends {
-  flex: 2;
-  display: flex;
-  align-items: center;
+
+.Friends h1 {
+  margin-left: 10px;
+  font-size: 30px;
 }
 
-.Friends i {
-  margin-left: auto;
+.Friends .icons {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 10px;
 }
+
+.Friends .icons i {
+  margin-right: 15px;
+}
+
 .display {
   flex: 3;
   display: flex;
-  border: 1px solid blue;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 10%;
+  border: 1px solid blue;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: rgb(205, 205, 205);
 }
-.name {
-  flex: 4;
 
-  display: flex;
-  width: 100%;
-  height: 10%;
-  border: 1px solid blue;
+.your-selector {
+  background-image: url(images\kakako.png);
 }
+
 .channel {
-  flex: 5;
-
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 10%;
-
   border: 1px solid blue;
+}
+.channel .icons {
+  justify-content: right;
+  margin-right: 20px;
+  flex: 6;
+  display: flex;
+  font-size: 30px;
+  margin-left: 10px;
 }
 .list {
-  flex: 6;
-
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 10%;
-
   border: 1px solid blue;
 }
-.bottom {
-  flex: 7;
 
+.list h1 {
+  margin-right: 50px;
+  font-size: 20px;
+  align-items: left;
+}
+
+.list .icons {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.bottom {
+  flex: 8;
   display: flex;
   width: 100%;
   height: 10%;
-
   border: 1px solid blue;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 50px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.bottom i {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }

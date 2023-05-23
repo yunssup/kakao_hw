@@ -24,11 +24,18 @@
       <section class="if">
         if you have a kakao Account,<br />log in with your email or phone<br />number
       </section>
-      <form action="#">
-        <input type="text" name="st_name" /><br />
-        <input type="text" name="st_id" /> <br />
-        <a href="friends.html">Log in</a>
+
+      <form action="#" onsubmit="return validateForm()">
+        <input type="text" name="st_name" id="st_name" /><br />
+        <input type="text" name="st_id" id="st_id" /> <br />
+        <a
+          href="http://127.0.0.1:5500/friends/friends.html"
+          class="login-button"
+          onclick="return validateForm()"
+          >Log in</a
+        >
       </form>
+
       <section class="password">Find Kakao Account or Password</section>
     </div>
   </body>
