@@ -59,7 +59,26 @@ body {
   background-color: rgb(205, 205, 205);
   border: 1px solid black;
 }
+.name {
+  flex: 4;
+  display: flex;
 
+  flex-direction: row;
+  width: 100%;
+}
+.name img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.name h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 70px;
+  margin-left: 20px;
+}
 .channel {
   display: flex;
   align-items: center;
@@ -81,11 +100,28 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-
+.list img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
 .list h1 {
-  margin-right: 50px;
+  margin-left: 50px;
   font-size: 20px;
-  align-items: left;
+  display: flex;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.list h2 {
+  margin-left: 30px;
+  font-size: 20px;
+  display: flex;
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
 .list .icons {
